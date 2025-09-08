@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LT ResultManager | LedtechT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="floating-nav-container">
+        <nav class="navbar navbar-expand-lg glass-nav px-4 py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-danger" href="index.html">LedtechT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#home">Home</a>
+                        </li>
+
+                        <!-- Dropdown for Products -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#products" id="productsDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="ltresultmanager.html">LT ResultManager</a></li>
+                                <li><a class="dropdown-item" href="#ltschoolmanager">LT SchoolManager</a></li>
+                                <li><a class="dropdown-item" href="#ltonlineplatform">LT Online Education Platform</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger fw-semibold" href="index.html#products">All
+                                        Products</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#pricing" id="pricingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pricing
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="pricingDropdown">
+                                <li><a class="dropdown-item" href="ltresultmanager.html#pricing">LT ResultManager </a>
+                                </li>
+                                <li><a class=" dropdown-item" href="#pricing-ltschoolmanager">LT SchoolManager
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#pricing-ltonlineplatform">LT Online Education
+                                        Platform
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger fw-semibold" href="#pricing">All Pricing</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>LT ResultManager Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Real-Time Results</h4>
+                        <p>Instantly display student results to parents and students with secure access.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Digital Reports</h4>
+                        <p>Generate dynamic, downloadable reports including grades, attendance, and comments.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h4>Notifications & Alerts</h4>
+                        <p>Send automatic notifications to parents about test scores, term results, and remarks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="row g-4 justify-content-center">
+
+                <!-- Starter Plan -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h4>Starter</h4>
+                        <div class="price">$10/month</div>
+
+                        <h6 class="text-danger">Features</h6>
+                        <ul>
+                            <li><i class="fas fa-check"></i> View & download reports</li>
+                        </ul>
+
+                        <h6 class="text-danger">Users</h6>
+                        <ul>
+                            <li><i class="fas fa-user"></i> Up to 5 teachers</li>
+                            <li><i class="fas fa-user-graduate"></i> Up to 50 students</li>
+                        </ul>
+
+                        <p>Extra: $2/teacher, $1/student</p>
+                        <!--<a href="#" class="btn btn-danger w-100">Choose Plan</a>-->
+                        <button class="btn btn-danger w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#planModal"
+                            data-plan="Starter">
+                            Choose Plan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Basic Plan -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h4>Basic</h4>
+                        <div class="price">$20/month</div>
+
+                        <h6 class="text-danger">Features</h6>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Starter features</li>
+                            <li><i class="fas fa-check"></i> View test scores</li>
+                            <li><i class="fas fa-check"></i> Notifications</li>
+                        </ul>
+
+                        <h6 class="text-danger">Users</h6>
+                        <ul>
+                            <li><i class="fas fa-user"></i> Up to 10 teachers</li>
+                            <li><i class="fas fa-user-graduate"></i> Up to 100 students</li>
+                        </ul>
+
+                        <p>Extra: $2/teacher, $1/student</p>
+                        <button class="btn btn-danger w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#planModal"
+                            data-plan="Basic">
+                            Choose Plan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h4>Premium</h4>
+                        <div class="price">$35/month</div>
+
+                        <h6 class="text-danger">Features</h6>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic features</li>
+                            <li><i class="fas fa-check"></i> Leaderboards</li>
+                        </ul>
+
+                        <h6 class="text-danger">Users</h6>
+                        <ul>
+                            <li><i class="fas fa-user"></i> Up to 15 teachers</li>
+                            <li><i class="fas fa-user-graduate"></i> Up to 150 students</li>
+                        </ul>
+
+                        <p>Extra: $2/teacher, $1/student</p>
+                        <button class="btn btn-danger w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#planModal"
+                            data-plan="Premium">
+                            Choose Plan
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Modal -->
+    <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="planModalLabel">Sign up for <span id="selectedPlanName">a plan</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="planForm">
+                        <!-- Hidden field to send plan name -->
+                        <input type="hidden" name="plan" id="selectedPlanInput">
+
+                        <div class="mb-3">
+                            <label class="form-label">Name and Surname</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Contact Email</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Additional Notes(Please confirm your plan)</label>
+                            <textarea class="form-control" name="notes" rows="3"></textarea>
+                        </div>
+                        <p>We will get back to you with more details in 24 hours.</p>
+
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
